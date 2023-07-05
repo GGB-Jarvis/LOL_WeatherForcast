@@ -5,7 +5,7 @@ have questions，please access to https://github.com/GGB-Jarvis/LOL_WeatherForca
 
 - preview
 
-![微信图片_20230705162038](D:\asus\IMAGES\屏幕截图\微信图片_20230705162038.jpg)
+![preview](.\preview.jpg)
 
 please use a wallpaper engine to load the project, for example `lively wallpaper`
 
