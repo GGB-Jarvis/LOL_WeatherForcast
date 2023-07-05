@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*元素的位置相对于浏览器窗口是固定位置*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.inner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.champion{
+    background-image: linear-gradient(to right, #5E9AC2 , #2BB4D0, #02CDC9, #5BE2AF, #A8F18C, #F9F871);
+    color: transparent;
+    font-size: 6rem;
+    margin-bottom: 1.5rem;
+    -webkit-background-clip:text;
+}
+.clock {
+    /* background-image: linear-gradient(to right, #FFFFFF , #AAF9FB, #009298);
+    -webkit-background-clip:text;
+    color: transparent; */
+    font-size: 3rem;
+    color: #fff;
+    margin-right: 2rem;
+    
+}
+
+.weather {
+    color: #fff;
+}
+
+.weather .location {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.weather .current-live {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.weather .current-live-item {
+    margin-right: 1rem;
+}
+
+.weather .current-abstract {
+    margin-bottom: 1rem;
+}
+
+.weather .current-basic {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.weather .current-basic-item {
+    margin-right: 1rem;
+    width: 5rem;
+}
+
+.weather .current-basic-item div:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.weather .current-basic-item div:last-child {
+    font-size: 0.8rem;
+}
+
+.weather .current-temp {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.weather .current-text {
+    font-size: 1.5rem;
+}
+
+.weather .current-live-item img {
+    /* font-size: 3rem; */
+    width: 5rem;
+    height: 5rem;
+}
+
+.forcast {
+    color: #fff;
+}
+
+.forcast .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.forcast .forcast-tabs-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.forcast .forcast-tabs-item .date-bg {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    margin-right: 1rem;
+}
+
+.forcast .forcast-tabs-item .date-bg .date {
+    margin-right: 2rem;
+
+}
+
+.forcast .forcast-tabs-item .date-bg .date p:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.forcast .forcast-tabs-item .date-bg .date p:last-child {
+    font-size: 1rem;
+    color: rgba(184, 176, 176, 0.5);
+}
+
+.forcast .forcast-tabs-item .date-bg img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+.forcast .forcast-tabs-item .temp-line-bg {
+    display: flex;
+    align-items: center;
+}
+
+.forcast .forcast-tabs-item .temp-line-bg .temp-line {
+    width: 8rem;
+    height: 0.5rem;
+    background-color: #007bff;
+    border-radius: 0.5rem;
+    margin: 0 1rem;
+}
+
+.forcast .forcast-tabs-item .temp-line-bg .temp-line .temp {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    top: -0.25rem;
+    left: 0;
+}
+
