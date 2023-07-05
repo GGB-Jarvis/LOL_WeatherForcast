@@ -5,7 +5,7 @@ have questions，please access to https://github.com/GGB-Jarvis/LOL_WeatherForca
 
 - preview
 
-![preview](.\preview.jpg)
+![preview](./preview.jpg)
 
 please use a wallpaper engine to load the project, for example `lively wallpaper`
 
